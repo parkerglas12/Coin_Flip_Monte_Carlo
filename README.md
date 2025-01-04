@@ -1,6 +1,6 @@
 # Coin Flip Monte Carlo Simulator
 
-A simple coin flip Monte Carlo simulator written in Python.
+This program is a coin flip Monte Carlo simulator written in Python. Outcome visualization is coded using Matplotlib and Seaborn.
 
 ## Features
 
