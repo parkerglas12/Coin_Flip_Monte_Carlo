@@ -22,7 +22,7 @@ def get_results(rng, sims: int) -> tuple[int, int]:
     return tails, heads
 
 def print_results(tails: int, heads: int, sims: int) -> None:
-    print(f"Of the {sims} flips, tails were flipped {tails} times, and heads were flipped {heads} times.")
+    print(f"Of the {sims:,} flips, tails were flipped {tails:,} times, and heads were flipped {heads:,} times.")
 
 def create_bar_chart(tails: int, heads: int, sims: int) -> None:
     sns.set()
@@ -32,7 +32,7 @@ def create_bar_chart(tails: int, heads: int, sims: int) -> None:
     plt.xlabel("Outcome", fontsize=14, weight="bold", labelpad=10)
     plt.xticks(fontsize=12, weight="bold")
     plt.ylabel("Count",  fontsize=14, weight="bold", labelpad=15)
-    plt.title(f"Monte Carlo Simulation of {sims} Coin Flips",  fontsize=14, weight="bold", pad=15)
+    plt.title(f"Monte Carlo Simulation of {sims:,} Coin Flips",  fontsize=14, weight="bold", pad=15)
     
     for bar in bars:
         yval = bar.get_height()
