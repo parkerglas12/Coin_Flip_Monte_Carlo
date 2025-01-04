@@ -8,8 +8,8 @@ def get_user_input() -> int:
     while True:
         try:
             sims: int = int(input("How many coin flips would you like to perform: "))
-            if sims <= 1 or sims > 100000000:
-                raise ValueError("Please enter an integer greater than 1 and less than 100,000,001.")
+            if sims <= 1 or sims >= 100000001:
+                raise ValueError("Enter an integer between 2 and 100,000,000.")
         except ValueError as e:
             print(f"Error: {e}")
         else:
